@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Secret.Ask - Questions and Answers</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./public/styles/global.css">
+    <link rel="stylesheet" href="./public/styles/room.css">
+    <link rel="stylesheet" href="./public/styles/modal.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="room" class="content">
+
+        <header>
+            <a href="#">
+                <img src="./public/images/logo.svg" alt="Rocket.Q logo" srcset="">
+            </a>
+            <div class="buttons">
+                <div class="button outlined">
+                    #323122
+                    <img src="./public/images/copy.svg" alt="Files symbolizing copying">
+                </div>
+                <a href="#" class="button">
+                    <img src="./public/images/users-white.svg" alt="Two characters symbolizing users">
+                    Create room
+                </a>
+            </div>
+        </header>
+        <main>
+            <section id="question-form">
+                <h2>Ask your question</h2>
+                <form action="">
+                    <label for="question" class="sr-only">What do you want to ask?</label>
+                    <textarea placeholder="What do you want to ask?" name="question" id="question"></textarea>
+                    <footer>
+                        <label for="question">
+                            <img src="./public/images/locker.svg" alt="">
+                            <p>This is an anonymous question.</p>
+                        </label>
+                        <button>Send</button>
+                    </footer>
+                </form>
+            </section>
+            <section id="questions">
+                <h2 class="sr-only">Community questions</h2>
+
+                <div class="questions">
+                    <!-- TODO: Remove question wrapper before send to production -->
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user"><img src="./public/images/avatar.svg" alt="A single character"></div>
+                            <div class="question">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae similique quidem numquam perspiciatis labore voluptate exercitationem eius enim, fuga consequuntur sed maiores voluptatibus saepe quia harum omnis. Adipisci, alias?
+                                Incidunt numquam ducimus consectetur repellat animi rem nisi exercitationem atque adipisci ex labore officia consequuntur, officiis quasi! Nihil error harum, placeat nam ullam quibusdam, deleniti, repellat reprehenderit et aliquam eligendi?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img src="./public/images/check.svg" alt="A check symbol">Mark as read</a>
+                            <a href="#"><img src="./public/images/trash.svg" alt="A trash can">Delete</a>
+                        </div>
+                    </div>
+                    <!-- TODO: Remove question wrapper before send to production -->
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user"><img src="./public/images/avatar.svg" alt="A single character"></div>
+                            <div class="question">
+                                <p>Hey, guys. What do you think about Docker? Is that a good tool to use in production? I'm little affraid it get decontinuated. Thanks in advance for all answers.Hey, guys.</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img src="./public/images/check.svg" alt="A check symbol">Mark as read</a>
+                            <a href="#"><img src="./public/images/trash.svg" alt="A trash can">Delete</a>
+                        </div>
+                    </div>
+                    <!-- TODO: Remove question wrapper before send to production -->
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user"><img src="./public/images/avatar.svg" alt="A single character"></div>
+                            <div class="question">
+                                <p>What's Javascript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img src="./public/images/check.svg" alt="A check symbol">Question read</a>
+                            <!-- <a href="#"><img src="./public/images/trash.svg" alt="A trash can">Delete</a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Delete question</h2>
+            <p>Are you sure you want to delete this question?</p>
+            <label class="sr-only" for="password">Type your password</label>
+            <form action="#"><input type="password" name="password" placeholder="Type your admin password"></form>
+
+            <div class="buttons">
+                <div class="button grey">Cancel</div>
+                <button class="red">Yes, delete</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
