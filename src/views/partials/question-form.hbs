@@ -1,0 +1,14 @@
+<section id="question-form">
+    <h2>Ask your question</h2>
+    <form action='/question/create/{{roomId}}' method='POST'>
+        <label for="question" class="sr-only">What do you want to ask?</label>
+        <textarea placeholder="What do you want to ask?" name="question" id="question"></textarea>
+        <footer>
+            <label for="question">
+                <img src="/images/locker.svg" alt="">
+                <p>This is an anonymous question.</p>
+            </label>
+            <button>Send</button>
+        </footer>
+    </form>
+</section>

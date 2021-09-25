@@ -1,0 +1,14 @@
+<div class='question-wrapper {{#if this.read}}read{{/if}}'>
+    <div class="question-content">
+        <div class="user"><img src="/images/avatar.svg" alt="A single character"></div>
+        <div class="question">
+            <p>{{this.title}}</p>
+        </div>
+    </div>
+    <div class="actions">
+        {{#unless this.read}}
+        <a href="#" data-id='{{this.id}}' class="check"><img src="/images/check.svg" alt="A check symbol">Mark as read</a>
+        {{/unless}}
+        <a href="#" data-id='{{this.id}}' class="delete"><img src="/images/trash.svg" alt="A trash can">Delete</a>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<section>
+    <h2>Create your own room</h2>
+    {{#if (isPage 'index' @exphbs.view)}}
+        <a href="/create-pass" class="button outlined">
+            <img src="/images/users.svg" alt="Character icon symbolizing an user">
+            Create a room
+        </a>
+    {{/if}}
+    {{#if (isPage 'create-pass' @exphbs.view)}}
+        <form action="/create-room" method="POST">
+            <label class="sr-only" for="room-pass">Room code</label>
+            <input type="password" name="password" id="room-pass" placeholder="Enter a password">
+            <button>
+                <img src="/images/users-white.svg" alt="An arrow indicating an entrypoint">
+                Create room
+            </button>
+        </form>
+    {{/if}}
+</section>

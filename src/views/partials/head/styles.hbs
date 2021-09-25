@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/styles/global.css">
+{{#if (isPage 'index' @exphbs.view)}}
+<link rel="stylesheet" href="/styles/index.css">
+{{/if}}
+
+{{#if (isPage 'create-pass' @exphbs.view)}}
+<link rel="stylesheet" href="/styles/index.css">
+{{/if}}
+
+{{#if (isPage 'room' @exphbs.view)}}
+<link rel="stylesheet" href="/styles/room.css">
+<link rel="stylesheet" href="/styles/modal.css">
+{{/if}}

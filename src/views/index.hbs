@@ -1,58 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Secret.Ask</title>
-
-    <!-- STYLES -->
-    <link rel="stylesheet" href="./public/styles/global.css">
-    <link rel="stylesheet" href="./public/styles/home.css">
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="home" class="content">
-        <header>
-            <img src="./public/images/logo.svg" alt="Rocket.Q logo" srcset="">
-        </header>
-        <div id="bg">
-            <div class="ball top"></div>
-            <div class="ball bottom"></div>
+<div id="home" class="content">
+    <header>
+        {{> header/logo }}
+    </header>
+    {{> background }}
+    <main>
+        <div class="container">
+        {{> section-enter-room }}
+        {{> div-separator }}
+        {{> section-create-room }}
         </div>
-        <main>
-            <div class="container">
-                <section>
-                    <h2>Enter as a participant</h2>
-                    <form action="">
-                        <label class="sr-only" for="room-id">Room code</label>
-                        <input type="number" id="room-id" placeholder="Room code">
-                        <button>
-                            <img src="./public/images/enter-room.svg" alt="An arrow indicating an entrypoint">
-                            Enter a room
-                        </button>
-                    </form>
-                </section>
-                <div class="separator">
-                    <div></div>
-                    <div>or</div>
-                    <div></div>
-                </div>
-                <section>
-                    <h2>You can create your own room easily</h2>
-                    <a href="create-room.html" class="button outlined">
-                        <img src="./public/images/users.svg" alt="Character icon symbolizing an user">
-                        Create a room
-                    </a>
-                </section>
-            </div>
-        </main>
-    </div>
-</body>
-</html>
+    </main>
+</div>
